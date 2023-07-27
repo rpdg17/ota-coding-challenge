@@ -23,6 +23,7 @@
                 return $averageB - $averageA;
             });
 
+            //Returning the list with only the student's name, gender, and average
             $sortedStudents = array_map(function($student) {
                 $average = ($student['physics'] + $student['maths'] + $student['english']) / 3;
                 return [
